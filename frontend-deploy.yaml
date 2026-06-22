@@ -1,0 +1,4 @@
+spec:
+  containers:
+  - name: vue-frontend
+    image: beibei860429/vue-pokemon:latest # 第一次手動推上去先這樣寫

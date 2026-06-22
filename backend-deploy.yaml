@@ -1,0 +1,4 @@
+spec:
+  containers:
+  - name: pokeshop-backend
+    image: beibei860429/springboot-api:latest # 第一次手動推上去先這樣寫
