@@ -24,7 +24,7 @@ spec:
       # 容器 2：Spring Boot 後端
       # 注意：這裡的 Image 標籤要讓 Jenkins 可以精準比對置換
       - name: springboot-backend
-        image: beibei860429/springboot-api:latest
+        image: beibei860429/springboot-api:VERSION_TAG
         ports:
         - containerPort: 8081
         env:
