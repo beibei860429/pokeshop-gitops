@@ -13,6 +13,12 @@ spec:
     metadata:
       labels:
         app: poke-app
+      annotations:
+        # 1. 啟用 Java 自動插樁（注入監控助手）
+        instrumentation.opentelemetry.io/inject-java: "true"
+        # 2. 關鍵防錯：指定監控助手「只」注入到名為 springboot-backend 的容器
+        sidecar.opentelemetry.io/inject: "true"
+        instrumentation.opentelemetry.io/container-names: "springboot-backend"
     spec:
       containers:
       # 容器 1：Vue 前端網頁
